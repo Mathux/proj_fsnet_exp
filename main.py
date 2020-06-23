@@ -15,9 +15,9 @@ def main(dataset):
     Algorithms = [HSICLasso, mRMR]
     # MMD/mRMR/HSCI Lasso
     
-    # nfeats = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-    nfeats = [10]
-    nepochs = 2
+    nfeats = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    # nfeats = [10]
+    nepochs = 50
     
     experiments = Experiments(dataset)
     pbar = tqdm([0] + list(range(nepochs))) # add 0 again to do it twice, to remove initialization time for python modules
